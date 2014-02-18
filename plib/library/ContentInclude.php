@@ -25,9 +25,9 @@ class Modules_BroadcastMessage_ContentInclude
         return '// example';
     }
 
-    public function getHtmlContent()
+    public function getHeadContent()
     {
-        return '<!-- xx -->';
+        return '<!-- some content inside head tag -->';
     }
 
 }
