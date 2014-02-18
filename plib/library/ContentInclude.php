@@ -5,7 +5,7 @@ class Modules_BroadcastMessage_ContentInclude
 
     public function init()
     {
-        info('test message');
+        pm_View_Status::addInfo('info message');
     }
 
     public function getJsConfig()
