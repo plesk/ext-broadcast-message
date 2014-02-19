@@ -2,7 +2,9 @@
 <module>
   <id>broadcast-message</id>
   <name>Broadcast Message</name>
+  <name xml:lang="ru-RU">Оповещения</name>
   <description>Shows message on every page if such message was defined.</description>
+  <description xml:lang="ru-RU">Оповещения, отображаемые на каждой странице панели (если включены).</description>
   <version>1.0</version>
   <release>1</release>
   <vendor>Parallels, Inc.</vendor>
