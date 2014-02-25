@@ -3,14 +3,7 @@
 class IndexController extends pm_Controller_Action
 {
 
-    public function init()
-    {
-        parent::init();
-
-        if (!pm_Session::getClient()->isAdmin()) {
-            throw new pm_Exception('Permission denied');
-        }
-    }
+    protected $_accessLevel = 'admin';
 
     public function indexAction()
     {
