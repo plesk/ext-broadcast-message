@@ -6,6 +6,7 @@ $messages = [
     'fieldEnable' => 'Включить',
     'fieldMessage' => 'Сообщение',
     'fieldType' => 'Тип',
+    'fieldAllowHtml' => 'Разрешить HTML',
     'typeInfo' => 'информация',
     'typeWarning' => 'предупреждение',
 ];

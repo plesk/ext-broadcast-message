@@ -6,6 +6,7 @@ $messages = [
     'fieldEnable' => 'Enable broadcast message',
     'fieldMessage' => 'Message',
     'fieldType' => 'Type',
+    'fieldAllowHtml' => 'Allow HTML',
     'typeInfo' => 'Information',
     'typeWarning' => 'Warning',
 ];

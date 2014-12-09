@@ -10,6 +10,11 @@ class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
             'value' => (bool)pm_Settings::get('enable'),
         ));
 
+        $this->addElement('checkbox', 'allowHtml', array(
+            'label' => $this->lmsg('fieldAllowHtml'),
+            'value' => (bool)pm_Settings::get('allowHtml'),
+        ));
+
         $this->addElement('text', 'message', array(
             'label' => $this->lmsg('fieldMessage'),
             'value' => pm_Settings::get('message'),
@@ -34,6 +39,7 @@ class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
     {
         $values = $this->getValues();
         pm_Settings::set('enable', (bool)$values['enable']);
+        pm_Settings::set('allowHtml', (bool)$values['allowHtml']);
         pm_Settings::set('message', $values['message']);
         pm_Settings::set('type', $values['type']);
     }
