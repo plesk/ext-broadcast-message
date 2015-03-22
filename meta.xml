@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved. -->
+<!-- Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved. -->
 <module>
   <id>broadcast-message</id>
   <name>Broadcast Message</name>
@@ -7,7 +7,7 @@
   <description>Shows message on every page if such message was defined.</description>
   <description xml:lang="ru-RU">Оповещения, отображаемые на каждой странице панели (если включены).</description>
   <version>1.1</version>
-  <release>0</release>
+  <release>1</release>
   <vendor>Parallels</vendor>
   <plesk_min_version>12.0</plesk_min_version>
 </module>
