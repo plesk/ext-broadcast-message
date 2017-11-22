@@ -2,5 +2,5 @@ This extension allows you to show a message on each Plesk page visible to all us
 
 - Specify the message content.
 - Enable or disable the message broadcast.
-- Select the type of a message ("Information" or "Warningâ").
+- Select the type of a message ("Information" or "Warning").
 - Select the "Allow HTML" option to format the appearance of the message using HTML tags.
