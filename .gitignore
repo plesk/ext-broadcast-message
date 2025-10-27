@@ -1,0 +1,8 @@
+# Composer
+/src/plib/vendor
+
+# testing
+/.phpunit.cache
+
+# misc
+.idea

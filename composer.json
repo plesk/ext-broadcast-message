@@ -1,0 +1,32 @@
+{
+    "name": "plesk/ext-broadcast",
+    "description": "Message broadcasting extension for Plesk",
+    "config": {
+        "vendor-dir": "src/plib/vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "PleskExt\\BroadcastMessage\\": [
+                "modules/broadcast-message/library/",
+                "src/plib/library/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": [
+                "tests/unit/"
+            ]
+        }
+    },
+    "require": {
+        "symfony/html-sanitizer": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "plesk/pm-api-stubs": "^18.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
