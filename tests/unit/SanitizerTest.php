@@ -56,6 +56,14 @@ class SanitizerTest extends TestCase
             '<a href="https://example.com" title="link">click me</a>',
         ];
         yield [
+            '<a href="https://example.com" title="link" target="_blank">click me</a>',
+            '<a href="https://example.com" title="link" target="_blank">click me</a>',
+        ];
+        yield [
+            '<a href="https://example.com" title="link" target="_blank" rel="noopener noreferrer">click me</a>',
+            '<a href="https://example.com" title="link" target="_blank" rel="noopener noreferrer">click me</a>',
+        ];
+        yield [
             '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA" />', //onerror in data URI
             '<img />',
         ];
@@ -73,7 +81,11 @@ class SanitizerTest extends TestCase
         ];
         yield [
             '<div style="background:url(javascript:alert(1))">bad</div>',
-            '<div >bad</div>'
+            '<div >bad</div>',
+        ];
+        yield [
+            '<h2 title="Heading" style="text-align: center">Hi</h2>',
+            '<h2 title="Heading" style="text-align: center">Hi</h2>',
         ];
     }
 }
