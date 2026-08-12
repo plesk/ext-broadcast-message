@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 
 namespace tests\unit;
 
@@ -17,7 +17,7 @@ class SanitizerTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    private function getDataProvider(): iterable
+    public static function getDataProvider(): iterable
     {
         yield [
             '<p>Hello <b>"world"</b></p>',
