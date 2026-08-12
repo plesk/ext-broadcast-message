@@ -19,9 +19,6 @@
             ]
         }
     },
-    "require": {
-        "symfony/html-sanitizer": "^7.3"
-    },
     "require-dev": {
         "phpunit/phpunit": "^10.5",
         "plesk/pm-api-stubs": "^18.0"
