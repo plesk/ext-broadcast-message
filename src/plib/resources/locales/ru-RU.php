@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH.
+// Copyright 1999-2026. WebPros International GmbH.
 $messages = [
     'settingsPageTitle' => 'Настройки оповещений',
     'settingsSaved' => 'Настройки сохранены.',

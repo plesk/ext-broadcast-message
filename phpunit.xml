@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. -->
+<!-- Copyright 1999-2026. WebPros International GmbH. -->
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
          bootstrap="src/plib/vendor/autoload.php"

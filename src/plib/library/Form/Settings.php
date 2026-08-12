@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH.
+// Copyright 1999-2026. WebPros International GmbH.
 class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
 {
 
