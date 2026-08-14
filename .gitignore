@@ -1,8 +1,5 @@
-# Composer
 /src/plib/vendor
-
-# testing
-/.phpunit.cache
-
-# misc
-.idea
+/phpunit.xml
+/.phpunit.result.cache
+/.phpunit.coverage/
+/.phpunit.coverage.*
