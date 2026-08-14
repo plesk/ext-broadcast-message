@@ -3,14 +3,13 @@
 
 namespace tests\unit;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use PleskExt\BroadcastMessage\Helper\Sanitizer;
 
 class SanitizerTest extends TestCase
 {
-    /**
-     * @dataProvider getDataProvider
-     */
+    #[DataProvider('getDataProvider')]
     public function testSanitize($initialText, $expected): void
     {
         $actual = Sanitizer::sanitize($initialText);
