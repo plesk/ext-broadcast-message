@@ -7,6 +7,9 @@ $messages = [
     'fieldMessage' => 'Message',
     'fieldType' => 'Type',
     'fieldAllowHtml' => 'Allow HTML',
+    'fieldShowUntil' => 'Show until',
+    'fieldShowUntilDescription' => 'Optional. The message is hidden automatically after this moment (server time). Format: YYYY-MM-DD HH:MM. Leave empty to show the message until it is disabled manually.',
+    'errorShowUntilInvalid' => 'Invalid date. Use the YYYY-MM-DD HH:MM format, for example: 2026-12-31 23:59.',
     'typeInfo' => 'Information',
     'typeWarning' => 'Warning',
 ];

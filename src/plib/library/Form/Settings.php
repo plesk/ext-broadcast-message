@@ -1,5 +1,8 @@
 <?php
 // Copyright 1999-2026. WebPros International GmbH.
+
+use PleskExt\BroadcastMessage\Helper\Expiration;
+
 class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
 {
 
@@ -30,6 +33,18 @@ class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
             ],
         ));
 
+        $showUntilValidator = new Zend_Validate_Callback([Expiration::class, 'isValidFormat']);
+        $showUntilValidator->setMessage(
+            $this->lmsg('errorShowUntilInvalid'),
+            Zend_Validate_Callback::INVALID_VALUE
+        );
+        $this->addElement('text', 'showUntil', array(
+            'label' => $this->lmsg('fieldShowUntil'),
+            'description' => $this->lmsg('fieldShowUntilDescription'),
+            'value' => pm_Settings::get('showUntil'),
+            'validators' => array($showUntilValidator),
+        ));
+
         $this->addControlButtons(array(
             'cancelHidden' => true,
         ));
@@ -42,6 +57,7 @@ class Modules_BroadcastMessage_Form_Settings extends pm_Form_Simple
         pm_Settings::set('allowHtml', (bool)$values['allowHtml']);
         pm_Settings::set('message', $values['message']);
         pm_Settings::set('type', $values['type']);
+        pm_Settings::set('showUntil', trim($values['showUntil']));
     }
 
 }

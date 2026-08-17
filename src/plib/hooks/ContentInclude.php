@@ -1,6 +1,7 @@
 <?php
 // Copyright 1999-2026. WebPros International GmbH.
 
+use PleskExt\BroadcastMessage\Helper\Expiration;
 use PleskExt\BroadcastMessage\Helper\Sanitizer;
 
 class Modules_BroadcastMessage_ContentInclude extends pm_Hook_ContentInclude
@@ -8,6 +9,7 @@ class Modules_BroadcastMessage_ContentInclude extends pm_Hook_ContentInclude
     public function init()
     {
         if (pm_Session::isExist() && pm_Settings::get('enable') &&
+            !Expiration::isExpired(pm_Settings::get('showUntil')) &&
             $message = pm_Settings::get('message')
         ) {
             $allowHtml = (bool)pm_Settings::get('allowHtml');
