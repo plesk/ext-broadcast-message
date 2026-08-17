@@ -6,4 +6,4 @@
 
 Shows message on every page if such message was defined.
 
-<img src="_meta/screenshots/1.png" alt="Broadcast message shown on a Plesk page" width="600" border="1">
+<img src="_meta/screenshots/1.png" alt="Broadcast message shown on a Plesk page" width="600">
